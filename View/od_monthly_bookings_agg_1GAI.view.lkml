@@ -11,8 +11,14 @@ view: od_monthly_bookings_agg_1GAI  {
   dimension: Departure_Date_key {
     type: date
     primary_key: no
-    sql: ${TABLE}.DEPARTURE_DATE ;;
+    sql: Cast(${TABLE}.DEPARTURE_DATE as Timestamp);;
     hidden: no
+  }
+
+  dimension: Airport_Pair_Dir {
+    type: string
+    hidden: yes
+    sql: ${TABLE}.AIRPORT_PAIR_DIR ;;
   }
 
   dimension: Passenger_Count {
@@ -21,4 +27,10 @@ view: od_monthly_bookings_agg_1GAI  {
     sql: ${TABLE}.PASSENGER_COUNT ;;
     hidden: no
   }
+
+  measure: Passenger_Count_M {
+    type: sum
+    sql: ${Passenger_Count} ;;
+  }
+
 }
