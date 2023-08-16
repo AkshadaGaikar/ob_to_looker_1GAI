@@ -1,5 +1,6 @@
 connection:"midt_prod_connect"
 include: "/View/**/*.view"
+include: "/Dashboard/**/*.dashboard.lookml"
 
 explore: od_monthly_bookings_agg_1GAI{
 from: od_monthly_bookings_agg_1GAI
