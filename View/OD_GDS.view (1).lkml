@@ -1,4 +1,4 @@
-view: OD_GDS  {
+view: OD_GDS_1GAI  {
   sql_table_name: `MIDT_CONSUMPTION.GDS_DIM` ;;
 
   dimension: GDS_ID {
