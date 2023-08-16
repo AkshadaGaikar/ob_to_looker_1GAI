@@ -1,5 +1,5 @@
-- dashboard: ob_to_l_1gai
-  title: OB_to_L_1GAI
+- dashboard: ob_to_l_2gai
+  title: OB_to_L_2GAI
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
